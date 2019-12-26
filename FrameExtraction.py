@@ -28,8 +28,8 @@ cap = cv2.VideoCapture(video_path)
 while(True):
         
     ret, frame = cap.read()
-    frame_name = os.path.join(output_path,'frame'+ str(counter).zfill(5) + '.jpg')
-    second_name = os.path.join(out_2,'frame'+ str(counter).zfill(5) + '.jpg')
+    frame_name = os.path.join(output_path,'frame_'+ str(counter).zfill(5) + '.jpg')
+    second_name = os.path.join(out_2,'frame_'+ str(counter).zfill(5) + '.jpg')
     
     if np.shape(frame) == ():
         break
